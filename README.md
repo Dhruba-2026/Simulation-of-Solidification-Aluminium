@@ -1,84 +1,131 @@
 # Simulation-of-Solidification-Aluminium
 Numerical simulation of cooling and solidification behaviour in aluminium alloy using Python (Finite Difference Method).
-rho=2700#Density(kg/m^3)
-k=180#Thermal Conductivity(W/mk)
-cp=900#Specific heat(J/kgK)
-l=397000#Latent Heat(J/Kg)
-Tm=660#Melting Temp(degree Celcius)
-Ti=750#Initial Temp(degree Celcius)
-Ta=25#Ambient Temperature(degree celcius)
-thickness=0.02#2cm slab(m)
-h=20#heat transfer coefficient (W/m^2K) (natural convection assumption)
+# Simulation of Solidification – Aluminium
 
-#Assume 1 m^2 surface area slab
-area=1
-volume=area*thickness
-mass=rho*volume
+## Python-Based Simulation of Solidification and Cooling Behaviour in Aluminium Alloy
 
-#
-#1. Cooling Rate
-#
+---
 
-delta_T=Ti-Ta
-cooling_rate= (h*delta_T)/(rho * cp * thickness)
+## 📌 Project Overview
 
-#
-#2. Total Heat Removed
-#
+This project presents a numerical simulation of the cooling and solidification behaviour of a 2 cm thick aluminium alloy slab using Python.
 
-Q_sensible=mass*cp*(Ti-Tm)
-Q_latent=mass*l
-Q_total=Q_sensible+Q_latent
+The simulation is developed using the **Finite Difference Method (FDM)** to solve the one-dimensional transient heat conduction equation.  
 
-#
-#3. Thermal Diffusivity
-#
+The model predicts temperature evolution, phase transformation, and important solidification parameters during cooling from liquid state to solid state.
 
-alpha=k/(rho*cp)
+---
 
-#Assume approximate solidification time (seconds)
-solidification_time=300
+## 🎯 Objectives
 
-#
-#4. Fourier Number
-#
+The main objectives of this project are:
 
-Fo=(alpha * solidification_time)/(thickness**2)
+- Simulate the cooling curve at the center of the slab  
+- Determine the solid fraction distribution  
+- Calculate the final temperature distribution  
+- Compute important thermal and solidification parameters  
 
-#
-#5. Thermal Gradient
-#
+---
 
-thermal_gradient=(Ti-Ta)/thickness
+## ⚙️ Material Properties and Input Parameters
 
-#
-#6.Solidification Front Velocity
-#
+- Density (ρ) = 2700 kg/m³  
+- Thermal Conductivity (k) = 180 W/m·K  
+- Specific Heat Capacity (Cp) = 900 J/kg·K  
+- Latent Heat of Fusion (L) = 397,000 J/kg  
+- Melting Temperature (Tm) = 660°C (933 K)  
+- Slab Thickness = 0.02 m  
+- Initial Temperature = 750°C  
+- Ambient Temperature = 25°C  
 
-solidification_velocity=cooling_rate/thermal_gradient
+---
 
-#
-#Print Results
-#
+## 🧮 Methodology
 
-print("===== Numerical Results =====\n")
+The simulation is based on:
 
-print(f"Cooling Rate: {cooling_rate:.4f} C/s")
+- One-dimensional transient heat conduction equation  
+- Explicit finite difference scheme  
+- Phase change modelling using latent heat consideration  
+- Time-stepping numerical approach  
 
-print(f"\nMass of Slab: {mass: .2f} kg")
+Thermal diffusivity is calculated as:
 
-print(f"\nSensible Heat Removed: {Q_sensible:.2f} J")
+α = k / (ρ Cp)
 
-print(f"Latent Heat Removed: {Q_latent:.2f} J")
+The Fourier number is used to analyze heat diffusion behaviour and numerical stability.
 
-print(f"Total Heat removed: {Q_total:.2f} J")
+---
 
-print(f"\nThermal Diffusivity: {alpha:.6e}m^2/s")
+## 📊 Outputs Obtained
 
-print(f"\nFourier Number: {Fo:.2f}")
+The following results are generated from the simulation:
 
-print(f"\nThermal Gradient: {thermal_gradient:.2f} K/m")
+1. Cooling Curve at the slab center  
+2. Solid Fraction Distribution  
+3. Final Temperature Distribution  
+4. Mass of the slab  
+5. Sensible heat removed  
+6. Latent heat released  
+7. Total heat removed  
+8. Solidification time  
+9. Maximum cooling rate  
+10. Thermal diffusivity  
+11. Fourier number  
+12. Thermal gradient  
+13. Solidification front velocity  
 
-print(f"\nSolidification Front Velocity: {solidification_velocity:.6e} m/s")
+---
 
-print("\n===== END OF SIMULATION =====")
+## 💻 Tools & Technologies Used
+
+- Python  
+- NumPy  
+- Matplotlib  
+- Google Colab  
+
+---
+
+## 📈 Significance of the Project
+
+This project demonstrates the application of numerical heat transfer principles in metallurgical process simulation.
+
+It helps in understanding:
+
+- Cooling behaviour of metals  
+- Solidification mechanisms  
+- Heat transfer during casting  
+- Computational modelling in materials science  
+
+---
+
+## 🚀 Future Improvements
+
+- Extension to 2D simulation  
+- Inclusion of convection boundary conditions  
+- Modelling of alloy solidification range  
+- Implementation of implicit numerical schemes  
+
+---
+
+## 👨‍🔬 Author
+
+**Dhrubajyoti Bhattacherjee**  
+Bachelor of Mechanical Engineering  
+Interest Area: Materials Science & Metallurgical Simulation
+
+
+## Source Code
+
+The full simulation notebook is available here:
+
+[Open the Jupyter Notebook]
+(Solidification_Simulation_Aluminium.ipynb)
+
+
+## Project Report
+
+The complete research report can be downloaded below:
+
+[Download the full report here]
+(Solidification_Simulation_Report.pdf)
