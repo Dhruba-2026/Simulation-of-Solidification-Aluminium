@@ -2,7 +2,7 @@
 Numerical simulation of cooling and solidification behaviour in aluminium alloy using Python (Finite Difference Method).
 # Simulation of Solidification – Aluminium
 
-## Python-Based Simulation of Solidification and Cooling Behaviour in Aluminium Alloy
+## Simulation of Solidification and Cooling Behavior in Aluminium Alloy Using Python.
 
 ---
 
