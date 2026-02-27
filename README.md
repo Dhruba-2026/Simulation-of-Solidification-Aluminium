@@ -121,7 +121,7 @@ The full simulation notebook is available here:
 
 [Open the Jupyter Notebook]
 
-(./Solidification_Simulation_Aluminium.ipynb)
+(Solidification_Simulation_Aluminium.01.ipynb)
 
 
 ## Project Report
