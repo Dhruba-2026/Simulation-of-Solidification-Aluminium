@@ -119,15 +119,11 @@ Interest Area: Materials Science & Metallurgical Simulation
 
 The full simulation notebook is available here:
 
-[Open the Jupyter Notebook]
-
-(Solidification_Simulation_Aluminium.01.ipynb)
+[Open the Jupyter Notebook](Solidification_Simulation_Aluminium.01.ipynb)
 
 
 ## Project Report
 
 The complete research report can be downloaded below:
 
-[Download the full report here]
-
-(Solidification_Simulation_Report.pdf)
+[Download the full report here](Solidification_Simulation_Report.pdf)
