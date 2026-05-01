@@ -126,4 +126,4 @@ The full simulation notebook is available here:
 
 The complete research report can be downloaded below:
 
-[Download the full report here](Solidification_Simulation_Report.pdf)
+[Download the full report here](Simulation of Solidification and Cooling Behavior in Alluminium Alloy using Python.01.pdf)
