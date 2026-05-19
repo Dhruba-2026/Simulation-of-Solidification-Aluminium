@@ -6,7 +6,7 @@ Numerical simulation of cooling and solidification behaviour in aluminium alloy 
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project presents a numerical simulation of the cooling and solidification behaviour of a 2 cm thick aluminium alloy slab using Python.
 
@@ -16,7 +16,7 @@ The model predicts temperature evolution, phase transformation, and important so
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 The main objectives of this project are:
 
@@ -27,7 +27,7 @@ The main objectives of this project are:
 
 ---
 
-## ⚙️ Material Properties and Input Parameters
+## Material Properties and Input Parameters
 
 - Density (ρ) = 2700 kg/m³  
 - Thermal Conductivity (k) = 180 W/m·K  
@@ -40,7 +40,7 @@ The main objectives of this project are:
 
 ---
 
-## 🧮 Methodology
+## Methodology
 
 The simulation is based on:
 
@@ -57,7 +57,7 @@ The Fourier number is used to analyze heat diffusion behaviour and numerical sta
 
 ---
 
-## 📊 Outputs Obtained
+## Outputs Obtained
 
 The following results are generated from the simulation:
 
@@ -77,7 +77,7 @@ The following results are generated from the simulation:
 
 ---
 
-## 💻 Tools & Technologies Used
+## Tools & Technologies Used
 
 - Python  
 - NumPy  
@@ -86,7 +86,7 @@ The following results are generated from the simulation:
 
 ---
 
-## 📈 Significance of the Project
+## Significance of the Project
 
 This project demonstrates the application of numerical heat transfer principles in metallurgical process simulation.
 
@@ -99,7 +99,7 @@ It helps in understanding:
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Extension to 2D simulation  
 - Inclusion of convection boundary conditions  
@@ -108,7 +108,7 @@ It helps in understanding:
 
 ---
 
-## 👨‍🔬 Author
+## Author
 
 **Dhrubajyoti Bhattacherjee**  
 Bachelor of Mechanical Engineering  
